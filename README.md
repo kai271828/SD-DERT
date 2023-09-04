@@ -53,7 +53,7 @@ home/u2339555
 │   │   ├── annotations
 │   │   │    │─── aitod_train.json
 │   │   │    │─── aitodv2_train.json
-│   │   │    │─── ....json
+│   │   │    │─── ...
 │   │   ├── trainval
 │   │   │    │─── ***.png
 │   │   │    │─── ***.png
