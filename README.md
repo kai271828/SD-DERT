@@ -51,8 +51,9 @@ home/u2339555
 ├── AITOD
 │   ├── aitod
 │   │   ├── annotations
-│   │   │    │─── aitod_training_v1.json
-│   │   │    │─── aitod_validation_v1.json
+│   │   │    │─── aitod_train.json
+│   │   │    │─── aitodv2_train.json
+│   │   │    │─── ....json
 │   │   ├── trainval
 │   │   │    │─── ***.png
 │   │   │    │─── ***.png
