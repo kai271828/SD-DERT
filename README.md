@@ -93,11 +93,10 @@ python tools/test.py configs/SOD/AITODv2_SD-DETR_2stages_NWD_60e.py ~/result/epo
 
 ## Citation
 ```BibTeX
-@inproceedings{AI-TOD_2020_ICPR,
-    title={Tiny Object Detection in Aerial Images},
-    author={Wang, Jinwang and Yang, Wen and Guo, Haowen and Zhang, Ruixiang and Xia, Gui-Song},
-    booktitle=ICPR,
-    pages={3791--3798},
-    year={2021},
+@inproceedings{SD-DETR,
+    title={A Transformer-Based Framework for Tiny Object Detection},
+    author={Yi-Kai Liao, Gong-Si Lin and Mei-Chen Yeh},
+    booktitle=APSIPA ASC,
+    year={2023},
 }
 ```
