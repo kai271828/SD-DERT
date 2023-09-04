@@ -96,7 +96,7 @@ python tools/test.py configs/SOD/AITODv2_SD-DETR_2stages_NWD_60e.py ~/result/epo
 @inproceedings{SD-DETR,
     title={A Transformer-Based Framework for Tiny Object Detection},
     author={Yi-Kai Liao, Gong-Si Lin and Mei-Chen Yeh},
-    booktitle=APSIPA ASC,
+    booktitle={APSIPA ASC},
     year={2023},
 }
 ```
