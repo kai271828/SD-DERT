@@ -41,7 +41,7 @@ class AITODDataset(CocoDataset):
     
     METAINFO = {
         'classes':
-        ('', '', '', '', '', '', '', ''),
+        ('airplane', 'bridge', 'storage-tank', 'ship', 'swimming-pool', 'vehicle', 'person', 'wind-mill'),
         'palette':
         [(23, 181, 2), (255, 242, 0), (0, 98, 255), (255, 82, 160), (250, 122, 47), (227, 5, 5), (199, 15, 255), (15, 255, 235),]
     }

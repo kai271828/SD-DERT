@@ -10,7 +10,7 @@ from .gaussian_focal_loss import GaussianFocalLoss
 from .gfocal_loss import DistributionFocalLoss, QualityFocalLoss
 from .ghm_loss import GHMC, GHMR
 from .iou_loss import (BoundedIoULoss, CIoULoss, DIoULoss, EIoULoss, GIoULoss,
-                       IoULoss, bounded_iou_loss, iou_loss)
+                       IoULoss, bounded_iou_loss, iou_loss, WassersteinLoss, wasserstein_loss)
 from .kd_loss import KnowledgeDistillationKLDivLoss
 from .mse_loss import MSELoss, mse_loss
 from .pisa_loss import carl_loss, isr_p
@@ -29,5 +29,5 @@ __all__ = [
     'weighted_loss', 'L1Loss', 'l1_loss', 'isr_p', 'carl_loss',
     'AssociativeEmbeddingLoss', 'GaussianFocalLoss', 'QualityFocalLoss',
     'DistributionFocalLoss', 'VarifocalLoss', 'KnowledgeDistillationKLDivLoss',
-    'SeesawLoss', 'DiceLoss'
+    'SeesawLoss', 'DiceLoss', 'WassersteinLoss', 'wasserstein_loss'
 ]

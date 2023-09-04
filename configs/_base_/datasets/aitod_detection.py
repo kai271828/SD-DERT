@@ -21,20 +21,14 @@ train_pipeline = [
     dict(type='LoadImageFromFile'),
     dict(type='LoadAnnotations', with_bbox=True),
     # dict(type='Resize', img_scale=(800, 800), keep_ratio=True),
-    ############################################################################################################################
     dict(type='Resize', scale=(800, 800), keep_ratio=True),
-    ############################################################################################################################
     # dict(type='RandomFlip', flip_ratio=0.5),
-    ############################################################################################################################
     dict(type='RandomFlip', prob=0.5),
-    ############################################################################################################################
     # dict(type='Normalize', **img_norm_cfg),
     # dict(type='Pad', size_divisor=32),
     # dict(type='DefaultFormatBundle'),
     # dict(type='Collect', keys=['img', 'gt_bboxes', 'gt_labels']),
-    ############################################################################################################################
     dict(type='PackDetInputs')
-    ############################################################################################################################
 ]
 test_pipeline = [
     dict(type='LoadImageFromFile'),
@@ -50,13 +44,11 @@ test_pipeline = [
 #             dict(type='ImageToTensor', keys=['img']),
 #             dict(type='Collect', keys=['img']),
 #         ])
-    ############################################################################################################################
     dict(type='Resize', scale=(800, 800), keep_ratio=True),
     dict(
         type='PackDetInputs',
         meta_keys=('img_id', 'img_path', 'ori_shape', 'img_shape','scale_factor')
     )
-    ############################################################################################################################
 ]
 
 # data = dict(
@@ -77,7 +69,6 @@ test_pipeline = [
 #         ann_file=data_root + 'annotations/aitod_test.json',
 #         img_prefix=data_root + 'test/',
 #         pipeline=test_pipeline))
-################################################################################################################################
 train_dataloader = dict(
     batch_size=2,
     num_workers=2,
@@ -117,9 +108,7 @@ test_dataloader = dict(
         data_prefix=dict(img='test/'),
         test_mode=True,
         pipeline=test_pipeline))
-################################################################################################################################
 # evaluation = dict(interval=12, metric='bbox')
-################################################################################################################################
 val_evaluator = dict(
     type='AITODMetric',
     ann_file=data_root + 'annotations/aitod_val.json',
@@ -130,4 +119,3 @@ test_evaluator = dict(
     ann_file=data_root + 'annotations/aitod_test.json',
     metric=['bbox'],
     format_only=False)
-################################################################################################################################
