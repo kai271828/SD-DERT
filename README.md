@@ -17,8 +17,8 @@ We have tested the following versions of OS and softwares:
 
 ### Install
 
-This repository is based on the [MMDetection](https://github.com/open-mmlab/mmdetection)
-Please refer to [installation instructions of MMDetection](https://mmdetection.readthedocs.io/en/latest/get_started.html)
+This repository is based on the [MMDetection](https://github.com/open-mmlab/mmdetection).
+Please refer to [installation instructions of MMDetection](https://mmdetection.readthedocs.io/en/latest/get_started.html).
 
 ```shell
 pip install -U openmim
