@@ -1,4 +1,4 @@
-# RD DETR
+# SD DETR
 
 This is the official implementation of the APSIPA ASC 2023 paper, "A Transformer-Based Framework for Tiny Object Detection".
 
